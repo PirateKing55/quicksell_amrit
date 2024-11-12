@@ -1,0 +1,116 @@
+.ticket-card {
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, rgba(40, 40, 45, 1), rgba(30, 30, 35, 1));
+    transition: all 0.3s ease;
+}
+
+.ticket-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.ticket-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.ticket-number {
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.ticket-title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.4rem;
+    flex-grow: 1;
+}
+
+.ticket-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.6rem;
+}
+
+.ticket-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.ticket-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-radius: 1rem;
+    background-color: #404244;
+    padding: 0.4rem 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.ticket-tag:hover {
+    background-color: #5c5f66;
+}
+
+.tag-circle {
+    background-color: #4f4f56;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.tag-label {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.options-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0.4rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.options-icon:hover {
+    transform: scale(1.2);
+}
+
+.ticket-card-header,
+.ticket-card-body,
+.ticket-card-footer {
+    gap: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .ticket-card {
+        min-width: 100%;
+    }
+
+    .ticket-title {
+        font-size: 0.95rem;
+    }
+
+    .ticket-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ticket-card-body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

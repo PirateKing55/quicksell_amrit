@@ -1,0 +1,15 @@
+.layout {
+    min-height: calc(100vh - 60px);
+    /* Header height: 60px */
+    background-color: #2e2e34;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width:1050px) {
+    .layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

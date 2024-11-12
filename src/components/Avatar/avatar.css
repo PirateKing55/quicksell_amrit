@@ -1,0 +1,27 @@
+.avatar-container {
+    display: grid;
+    place-items: center;
+    font-size: 0.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #dfe1e4;
+    color: #19191b;
+    font-size: 0.8rem;
+    border-radius: 9999px;
+    position: relative;
+}
+
+.avatar-container .user-status {
+    position: absolute;
+    bottom: -0.125rem;
+    right: -0.125rem;
+    border: 1px solid #fff;
+    background-color: #dfe1e4;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+}
+
+.avatar-container .user-status.available {
+    background-color: #e8b602;
+}
