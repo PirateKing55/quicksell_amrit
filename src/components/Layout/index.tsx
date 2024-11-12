@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 import './layout.css'
 import TicketContainer from '../TicketContainer';
 
